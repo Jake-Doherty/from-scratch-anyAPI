@@ -18,11 +18,11 @@ INSERT INTO
 VALUES
   ('IKNX', 'Ikonics Corporation', '$16.39M', 'NASDAQ', 'Miscellaneous'),
   ('BML^L', 'Bank of America Corporation', 'n/a', 'NYSE', 'n/a'),
-  ('COT', 'Cott Corporation', '$1.97B', 'NYSE', 'Consumer Non-Durables'),
-  ('CHKP', 'Check Point Software Technologies Ltd.', '$18.26B', 'NASDAQ', 'Technology'),
-  ('JXSB', 'Jacksonville Bancorp Inc.', '$53.85M', 'NASDAQ', 'Finance'),
-  ('IO', 'Ion Geophysical Corporation', '$50.45M', 'NYSE', 'Energy'),
-  ('DCI', 'Donaldson Company, Inc.', '$6.19B', 'NYSE', 'Capital Goods'),
-  ('SITE', 'SiteOne Landscape Supply, Inc.', '$1.97B', 'NYSE', 'Consumer Non-Durables'),
+  ('MD', 'Mednax, Inc', '$5.26B', 'NYSE', 'Health Care'),
   ('BWLD', 'Buffalo Wild Wings, Inc.', '$2.24B', 'NASDAQ', 'Consumer Services'),
-  ('MD', 'Mednax, Inc', '$5.26B', 'NYSE', 'Health Care')
+  ('SITE', 'SiteOne Landscape Supply, Inc.', '$1.97B', 'NYSE', 'Consumer Non-Durables'),
+  ('DCI', 'Donaldson Company, Inc.', '$6.19B', 'NYSE', 'Capital Goods'),
+  ('IO', 'Ion Geophysical Corporation', '$50.45M', 'NYSE', 'Energy'),
+  ('JXSB', 'Jacksonville Bancorp Inc.', '$53.85M', 'NASDAQ', 'Finance'),
+  ('CHKP', 'Check Point Software Technologies Ltd.', '$18.26B', 'NASDAQ', 'Technology'),
+  ('COT', 'Cott Corporation', '$1.97B', 'NYSE', 'Consumer Non-Durables')
