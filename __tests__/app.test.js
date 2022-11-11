@@ -9,6 +9,18 @@ describe('stocks routes', () => {
   beforeEach(() => {
     return setup(pool);
   });
+  it('/stocks/:id should show the detail of a stock by id', async () => {
+    const resp = await request(app).get('/stocks/1');
+    const ikonics = {
+      id: '1',
+      ticker: 'IKNX',
+      company_name: 'Ikonics Corporation',
+      market_cap: '$16.39M',
+      market: 'NASDAQ',
+      stock_sector: 'Miscellaneous',
+    };
+    expect(resp.body).toEqual(ikonics);
+  });
   it('/stocks should get a list of all stocks', async () => {
     const resp = await request(app).get('/stocks');
     const expected = stocks.map((stock) => {
