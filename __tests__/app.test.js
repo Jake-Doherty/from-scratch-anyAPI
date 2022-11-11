@@ -5,7 +5,7 @@ const app = require('../lib/app');
 
 const { stocks } = require('../lib/stocks-data.js');
 
-describe('backend-express-template routes', () => {
+describe('stocks routes', () => {
   beforeEach(() => {
     return setup(pool);
   });
@@ -14,7 +14,7 @@ describe('backend-express-template routes', () => {
     const expected = stocks.map((stock) => {
       return {
         id: stock.id,
-        ticker: stock.symbol,
+        ticker: stock.ticker,
         company: stock.company_name,
       };
     });

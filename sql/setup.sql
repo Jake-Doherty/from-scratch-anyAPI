@@ -6,7 +6,7 @@ DROP TABLE
 CREATE TABLE
   stocks (
     id BIGINT GENERATED ALWAYS AS IDENTITY,
-    symbol VARCHAR NOT NULL,
+    ticker VARCHAR NOT NULL,
     company_name VARCHAR NOT NULL,
     market_cap VARCHAR NOT NULL,
     market VARCHAR NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE
   );
 
 INSERT INTO
-  stocks (symbol, company_name, market_cap, market, stock_sector)
+  stocks (ticker, company_name, market_cap, market, stock_sector)
 VALUES
   ('IKNX', 'Ikonics Corporation', '$16.39M', 'NASDAQ', 'Miscellaneous'),
   ('BML^L', 'Bank of America Corporation', 'n/a', 'NYSE', 'n/a'),
