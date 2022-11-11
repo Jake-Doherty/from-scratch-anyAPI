@@ -1,14 +1,24 @@
 const pool = require('../lib/utils/pool');
 const setup = require('../data/setup');
-// const request = require('supertest');
-// const app = require('../lib/app');
+const request = require('supertest');
+const app = require('../lib/app');
+
+const { stocks } = require('../lib/stocks-data.js');
 
 describe('backend-express-template routes', () => {
   beforeEach(() => {
     return setup(pool);
   });
-  it('example test - delete me!', () => {
-    expect(1).toEqual(1);
+  it('/stocks should get a list of all stocks', () => {
+    const res = request(app).get('/stocks');
+    const expected = stocks.map((stock) => {
+      return {
+        id: stock.id,
+        ticker: stock.symbol,
+        company: stock.company_name,
+      };
+    });
+    expect(res.body).toEqual(expected);
   });
   afterAll(() => {
     pool.end();
